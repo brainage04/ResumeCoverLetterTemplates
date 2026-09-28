@@ -1,0 +1,124 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[margin=1cm]{geometry}
+\usepackage[none]{hyphenat}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\definecolor{HyperlinkBlue}{HTML}{4A90E2}
+\newcommand{\documentlink}[2]{\href{#1}{\underline{#2}}}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=HyperlinkBlue,
+  pdftitle={Resume},
+  pdfauthor={}
+}
+
+\pagestyle{empty} % no page numbers
+
+\setlist[itemize]{leftmargin=2em, topsep=0pt, itemsep=1pt, parsep=0pt}
+\setlength{\parindent}{0pt}
+
+\newcommand{\sectionaftercode}{%
+  \vspace{2pt}% space between title and rule
+  \titlerule
+}
+
+\newcommand{\ressection}[1]{%
+  \section*{#1}%
+  \vspace{-12pt}% tighten gap if needed
+  \noindent\rule{\textwidth}{0.4pt}%
+  \vspace{0pt}% space between rule and content; adjust to taste
+}
+
+\titlespacing*{\section}
+  {0pt} % left
+  {6pt} % space above
+  {6pt} % space below
+
+\begin{document}
+
+\begin{center}
+
+{\LARGE \textbf{Candidate Name}}
+
+City, State, Australia
+
+\documentlink{mailto:candidate@example.com}{candidate@example.com} \textbar\ +61 400 000 000 \\
+\documentlink{https://github.com/username}{github.com/username} \textbar\ \documentlink{https://username.github.io/projects/}{username.github.io/projects}
+
+\end{center}
+
+\ressection{Summary}
+
+Software developer and graduate consultant with experience delivering enterprise Power Platform projects, modern Java mods, and full-stack applications. Australian university graduate with a Bachelor of Information Technology (Computer Science) with Distinction. Shipped client portal improvements through user acceptance testing, built paid software for content creators, maintain shared development tools across a broad public GitHub portfolio, and created AI-assisted development processes backed by automated and hands-on testing.
+
+\ressection{Skills}
+
+\begin{itemize}
+      \item \textbf{Languages:} Java, C\#, JavaScript, TypeScript, Kotlin, Python, SQL
+      \item \textbf{Power Platform:} Power Apps, Power Pages, Power Automate, Dataverse, DotLiquid, FetchXML, Microsoft Entra ID
+      \item \textbf{Java \& Modding:} Fabric, NeoForge/Forge, Gradle
+      \item \textbf{Testing \& Automation:} Playwright, Minecraft GameTest
+      \item \textbf{Version Control \& Delivery:} Git, GitHub Actions, CI/CD, Linux
+      \item \textbf{Data \& Web:} REST APIs, OAuth 2.0, PostgreSQL, SQLite, JSON, YAML
+\end{itemize}
+
+\ressection{Work Experience}
+
+\textbf{Graduate Associate Consultant -- Technology Consulting Firm \hfill Feb 2026 -- Present}
+\begin{itemize}
+      \item Delivered improvements to an enterprise client portal using Power Pages, JavaScript, DotLiquid, FetchXML, Dataverse, Power Automate, and Microsoft Entra ID, with user acceptance testing before release; work included forms, reporting, exports, record history, and permissions based on user roles.
+      \item Wrote C\# Dataverse plug-ins for record numbering, field history, validation, and access control, and built the internal tool suite below for releases and troubleshooting.
+\end{itemize}
+
+\textbf{Freelance Software Developer \hfill Jun 2023 -- Present}
+\begin{itemize}
+      \item Built and maintained paid Java Minecraft mods and plugins for content creators using Fabric, NeoForge/Forge, Twitch APIs and OAuth, and Baritone.
+      \item Delivered a Twitch-controlled Minecraft mod for a large content creator, plus a multiplayer revival plugin, covering live-chat voting, command safety, pathfinding, combat, crafting, and player-revival mechanics.
+\end{itemize}
+
+\textbf{Software Developer (Industry Capstone) -- Agricultural Technology Client \hfill Aug 2024 -- May 2025}
+\begin{itemize}
+      \item Built a farm-work planning task-board application for an industry client in a four-person team using Django, FastAPI, JavaScript/AJAX, PostgreSQL, and the OpenAI API.
+      \item Built APIs that converted farm descriptions and location data into task lists tailored to each farm; delivered the project through sprint planning, daily team meetings, and Git.
+\end{itemize}
+
+\textbf{Customer Service Team Member -- Fast-Food Restaurant \hfill Jul 2021 -- Feb 2026}
+
+\ressection{Projects}
+
+\textbf{Power Platform Tool Suite (C\#, .NET, Node.js, Playwright) \hfill Feb 2026 -- Present}
+\begin{itemize}
+      \item Built 18 C\# command-line tools and two Node.js/Playwright tools covering Dataverse schema, forms, views, flows and test data, Power Pages sites and access, solutions, backups, and Entra groups.
+      \item Wrote guidance so AI coding agents call these typed tools instead of ad hoc scripts; internal, employer-owned code.
+\end{itemize}
+
+\textbf{Minecraft Mod Build Conventions (Java, Gradle, GitHub Actions, Python) \hfill Jul 2026 -- Present}
+\begin{itemize}
+      \item Wrote eight Gradle plugins that standardise Fabric and multi-loader builds, code checks, automated game tests with video recording, and publishing to Maven Central, GitHub, Modrinth, and CurseForge.
+      \item Moved 26 mod and library repositories onto the plugins, removing about 1,800 lines of copied build and CI code.
+\end{itemize}
+
+\textbf{Rhythm Game Companion App (Kotlin, Jetpack Compose, SQLite, Python) \hfill Jul 2026 -- Present}
+\begin{itemize}
+      \item Built an offline Android companion app for an arcade rhythm game, with a searchable catalogue of thousands of songs and charts built by a Python data pipeline.
+      \item Added optional score import from the game's website (OkHttp, Jsoup) with hourly background sync and unit tests.
+\end{itemize}
+
+\ressection{Education}
+
+\textbf{Australian University, City Campus \hfill Graduated Dec 2025}
+\begin{itemize}
+      \item Bachelor of Information Technology (Computer Science) with Distinction
+      \item Minors in intelligent systems and computational science
+      \item Academic commendation for excellence (6.5+ GPA, Semesters 1 and 2, 2025)
+\end{itemize}
+
+\ressection{Referees}
+
+Available on request.
+
+
+\end{document}

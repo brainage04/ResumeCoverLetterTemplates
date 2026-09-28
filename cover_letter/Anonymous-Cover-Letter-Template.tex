@@ -1,0 +1,44 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage[margin=1cm]{geometry}
+\usepackage[none]{hyphenat}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\definecolor{HyperlinkBlue}{HTML}{4A90E2}
+\newcommand{\documentlink}[2]{\href{#1}{\underline{#2}}}
+\hypersetup{
+  colorlinks=true,
+  urlcolor=HyperlinkBlue,
+  pdftitle={Cover Letter},
+  pdfauthor={}
+}
+
+\pagestyle{empty} % no page numbers
+
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+{\LARGE \textbf{Candidate Name}}
+
+City, State, Australia
+
+\documentlink{mailto:candidate@example.com}{candidate@example.com} \textbar\ +61 400 000 000 \\
+\documentlink{https://github.com/username}{github.com/username} \textbar\ \documentlink{https://username.github.io/projects/}{username.github.io/projects}
+
+DayNumber FullMonthName FullYearNumber
+
+\setlength{\parskip}{1.2em}
+
+Dear Hiring Manager,
+
+InsertTextHere
+
+Alongside my software work, I spent over four years in customer service at a fast-food restaurant, where I learned to communicate clearly, work well in a team, and stay calm under pressure.
+
+InsertClosingHere
+
+Yours faithfully, \\
+Candidate Name
+
+\end{document}
